@@ -60,6 +60,7 @@
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -68,7 +69,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 1;
 
 }
 
@@ -79,7 +80,6 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: -1;
 }
 
 .content {
@@ -119,11 +119,11 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
-.two-columns__paragraph_margin {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -173,25 +173,25 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .table__text{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
 
-.table__text_bank {
+.table__text:last-child {
   margin: 0;
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-image: url(../images/feynman.png);
-  background-size: 867px 637px contain;
+  background-size: 867px, 637px, contain;
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-color: #f2f2f2;
@@ -231,7 +231,6 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 
 .section-title_theme_dark {
@@ -248,24 +247,16 @@
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
 }
 
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
   color: white;
-  margin: 0;
 }
 
 .table__text_theme_dark{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: white;
-  margin: 20px 0 0;
 }
 
 .kaufman__triangle {
@@ -274,7 +265,8 @@
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: -1;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px 877px;
 }
 
 .footer {
