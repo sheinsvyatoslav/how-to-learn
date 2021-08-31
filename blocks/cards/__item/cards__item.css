@@ -1,0 +1,8 @@
+.cards__item {
+  width: 240px;
+  margin-top: 60px;
+}
+
+.cards__item:last-child {
+  margin: 60px auto 0 100px;
+}
